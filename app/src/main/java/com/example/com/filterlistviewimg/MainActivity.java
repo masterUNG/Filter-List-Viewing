@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         // Generate sample data
         rank = new String[] { "  gunting", " kaca", " papan luncur air", " kertas", " arnab", " kotak", " kamera"
                 , " mee", " sewa kerata", " kain kotor", " perjalanan"," gula-gula"," roti" ," saiz"
