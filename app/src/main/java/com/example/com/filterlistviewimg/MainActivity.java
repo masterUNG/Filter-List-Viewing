@@ -1,4 +1,5 @@
 package com.example.com.filterlistviewimg;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -29,33 +30,33 @@ public class MainActivity extends Activity {
 
 
         // Generate sample data
-        rank = new String[] { "  gunting", " kaca", " papan luncur air", " kertas", " arnab", " kotak", " kamera"
-                , " mee", " sewa kerata", " kain kotor", " perjalanan"," gula-gula"," roti" ," saiz"
-        ," kecurian"," sampah","  botol","  hadiah"," kamu"," mainan "," mengayuh basikal"," penjual bunga"
-        ," penjual daging"," sendirian"," kurang upaya"," perapi"," rasa mual",
-        "  hiburan","  haba"," harga"," kepeningan"," bekerja"," ukiran"," senang"," perak"," mata wang",
-        " wang tunai"," sunyi"};
+        rank = new String[]{"  gunting", " kaca", " papan luncur air", " kertas", " arnab", " kotak", " kamera"
+                , " mee", " sewa kerata", " kain kotor", " perjalanan", " gula-gula", " roti", " saiz"
+                , " kecurian", " sampah", "  botol", "  hadiah", " kamu", " mainan ", " mengayuh basikal", " penjual bunga"
+                , " penjual daging", " sendirian", " kurang upaya", " perapi", " rasa mual",
+                "  hiburan", "  haba", " harga", " kepeningan", " bekerja", " ukiran", " senang", " perak", " mata wang",
+                " wang tunai", " sunyi"};
 
-        country = new String[] { " กรรไกร", " กระจก ", " กระดานโต้คลื่น",
-                "กระดาษ", " กระท่อม", " กล่อง", " กล้องถ่ายรูป", " ก๋วยเตี๋ยว",
-                "การเช่ารถ", " การซักรีด"," การเดินทาง"," ขนม,ลูกอม"," ขนมปัง" ," ขนาด"
-        ," ขโมย"," ขยะ"," ขวด"," ของขวัญ"," ขอบคุณ"," ของเล่น"," ขี่จักรยาน"
-        ," คนขายดอกไม้"," คนขายเนื้อ"," คนเดียว,โดดเดี่ยว"," คนพิการ",
-        " ครีมนวดผม"," คลื่นไส้"," ความบันเทิง"," ความร้อน"," ค่าใช้จ่าย"," ง่วงซึม"," งาน"," งานแกะสลัก"
-        ," ง่าย สบายๆ"," เงิน(แร่ธาตุ)"," เงินตรา"," เงินสด"," เงียบ"};
+        country = new String[]{" aกรรไกร", " aกระจก ", "aกระดานโต้คลื่น",
+                "abกระดาษ", " abกระท่อม", " abกล่อง", " กล้องถ่ายรูป", " ก๋วยเตี๋ยว",
+                "การเช่ารถ", " การซักรีด", " การเดินทาง", " ขนม,ลูกอม", " ขนมปัง", " ขนาด"
+                , " ขโมย", " ขยะ", " ขวด", " ของขวัญ", " ขอบคุณ", " ของเล่น", " ขี่จักรยาน"
+                , " คนขายดอกไม้", " คนขายเนื้อ", " คนเดียว,โดดเดี่ยว", " คนพิการ",
+                " ครีมนวดผม", " คลื่นไส้", " ความบันเทิง", " ความร้อน", " ค่าใช้จ่าย", " ง่วงซึม", " งาน", " งานแกะสลัก"
+                , " ง่าย สบายๆ", " เงิน(แร่ธาตุ)", " เงินตรา", " เงินสด", " เงียบ"};
 
-        population = new String[] { "  ฆูนติง", " กาจา",
+        population = new String[]{"  ฆูนติง", " กาจา",
                 " ปาปัน ลูนจูร์ อายัร", " เกอร์ตัส", " อัรนับ", " กอต๊อก ",
                 " คาเมรา", " มี", " เซวา เกอ-ราตา", " กายน์ กอตอร์",
-                " เปอร์จาลันนัน"," ฆูลอ ฆูลอ" ," โรตี" ," ไซส์"," เกอ-จูรียัน "," ซัมปะห์"," บอตอล"
-                ," ฮาดียะห์"," กามู"," มัยนัน" ," เมอ-งูายูห์ บาสิกัล"," เปินจูวัล บูงา"," เปินจูวัล ดาฆิง"
-                ," ซืนดีรียัน"," กูรัง อูปายา"," เปอ ราปี"," ราซา มูวัล"
-                ," ฮีบูรัน"," ฮาบา"," ฮัรฆา"," เกอ-เปอนีงัน"," เบอ-เกอร์จา"," อูกีรัน"," เซอ-นัง"," เปรัก",
-                " มาตา วัง"," วังตูนัย"," ซูยี"
+                " เปอร์จาลันนัน", " ฆูลอ ฆูลอ", " โรตี", " ไซส์", " เกอ-จูรียัน ", " ซัมปะห์", " บอตอล"
+                , " ฮาดียะห์", " กามู", " มัยนัน", " เมอ-งูายูห์ บาสิกัล", " เปินจูวัล บูงา", " เปินจูวัล ดาฆิง"
+                , " ซืนดีรียัน", " กูรัง อูปายา", " เปอ ราปี", " ราซา มูวัล"
+                , " ฮีบูรัน", " ฮาบา", " ฮัรฆา", " เกอ-เปอนีงัน", " เบอ-เกอร์จา", " อูกีรัน", " เซอ-นัง", " เปรัก",
+                " มาตา วัง", " วังตูนัย", " ซูยี"
 
         };
 
-        flag = new int[] { R.drawable.z1, R.drawable.z2,
+        flag = new int[]{R.drawable.z1, R.drawable.z2,
                 R.drawable.z3, R.drawable.z4,
                 R.drawable.z5, R.drawable.z6, R.drawable.z7,
                 R.drawable.z8, R.drawable.z10, R.drawable.z11, R.drawable.z12
@@ -67,12 +68,10 @@ public class MainActivity extends Activity {
                 , R.drawable.z36, R.drawable.z37, R.drawable.z38, R.drawable.z39};
 
 
-
         // Locate the ListView in listview_main.xml
         list = (ListView) findViewById(R.id.listview);
 
-        for (int i = 0; i < rank.length; i++)
-        {
+        for (int i = 0; i < rank.length; i++) {
             WorldPopulation wp = new WorldPopulation(rank[i], country[i], population[i], flag[i]);
             // Binds all strings into an array
             arraylist.add(wp);

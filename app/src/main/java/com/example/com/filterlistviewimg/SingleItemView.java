@@ -3,6 +3,7 @@ package com.example.com.filterlistviewimg;
 /**
  * Created by com on 24/9/2558.
  */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -40,17 +41,17 @@ public class SingleItemView extends Activity {
         flag = i.getIntExtra("flag", flag);
 
 
-            btnPlay = (Button) findViewById(R.id.btnPlay);
-            btnPlay.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        btnPlay = (Button) findViewById(R.id.btnPlay);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-                    MediaPlayer play = MediaPlayer.create(getBaseContext(), R.raw.m);
-                    play.start();
+                MediaPlayer play = MediaPlayer.create(getBaseContext(), R.raw.m);
+                play.start();
 
 
-                }
-            });
+            }
+        });
 
         // Locate the TextViews in singleitemview.xml
         txtrank = (TextView) findViewById(R.id.rank);

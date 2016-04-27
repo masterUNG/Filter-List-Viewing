@@ -3,6 +3,7 @@ package com.example.com.filterlistviewimg;
 /**
  * Created by com on 24/9/2558.
  */
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -32,13 +33,6 @@ public class ListViewAdapter extends BaseAdapter {
         inflater = LayoutInflater.from(mContext);
         this.arraylist = new ArrayList<WorldPopulation>();
         this.arraylist.addAll(worldpopulationlist);
-    }
-
-    public class ViewHolder {
-        TextView rank;
-        TextView country;
-        TextView population;
-        ImageView flag;
     }
 
     @Override
@@ -121,6 +115,13 @@ public class ListViewAdapter extends BaseAdapter {
             }
         }
         notifyDataSetChanged();
+    }
+
+    public class ViewHolder {
+        TextView rank;
+        TextView country;
+        TextView population;
+        ImageView flag;
     }
 
 }
