@@ -4,6 +4,7 @@ package com.example.com.filterlistviewimg;
  * Created by com on 24/9/2558.
  */
 public class WorldPopulation {
+
     private String rank;
     private String country;
     private String population;
